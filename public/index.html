@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vincent van Gogh - SPA</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <h1>Vincent van Gogh</h1>
+  </header>
+
+  <nav>
+    <div class="nav-item" data-target="biography">Biography</div>
+    <div class="nav-item" data-target="paintings">Paintings</div>
+    <div class="nav-item" data-target="exhibitions">Exhibitions</div>
+    <div class="nav-item" data-target="links">Links</div>
+    <div class="nav-item" data-target="admin">Admin</div>
+  </nav>
+
+  <aside id="side-menu">
+    <div id="biography-menu" class="hidden">
+      <p>Select Biography Section</p>
+    </div>
+    <div id="paintings-menu" class="hidden">
+      <p>Select Painting Category</p>
+    </div>
+    <div id="exhibitions-menu" class="hidden">
+      <p>Exhibition Filters</p>
+    </div>
+    <div id="links-menu" class="hidden">
+      <p>Link Categories</p>
+    </div>
+    <div id="admin-menu" class="hidden">
+      <button onclick="showLoginForm()">Login</button>
+    </div>
+  </aside>
+
+  <main>
+    <section id="biography">
+      <h2>Biography</h2>
+      <p>Vincent van Gogh was a Dutch Post-Impressionist painter...</p>
+    </section>
+
+    <section id="paintings" class="hidden">
+      <h2>Paintings</h2>
+      <div class="paintings-flex"></div>
+    </section>
+
+    <section id="exhibitions" class="hidden">
+      <h2>Exhibitions</h2>
+      <div id="exhibition-content"></div>
+    </section>
+
+    <section id="links" class="hidden">
+      <h2>Links</h2>
+      <div id="links-content"></div>
+    </section>
+
+    <section id="admin" class="hidden">
+      <h2>Admin</h2>
+      <form id="login-form" onsubmit="handleLogin(event)">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vincent van Gogh SPA</p>
+  </footer>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>

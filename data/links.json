@@ -1,0 +1,16 @@
+[
+  {
+    "category": "Web Resources",
+    "links": [
+      { "name": "Van Gogh Museum", "url": "https://www.vangoghmuseum.nl/" },
+      { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Vincent_van_Gogh" }
+    ]
+  },
+  {
+    "category": "Books",
+    "links": [
+      { "name": "Van Gogh: The Life", "url": "https://www.goodreads.com/book/show/11644674" },
+      { "name": "Dear Theo", "url": "https://www.goodreads.com/book/show/59733" }
+    ]
+  }
+]
